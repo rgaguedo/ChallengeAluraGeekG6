@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - ONE/AluraLatam</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="section-header">
+            <img src="./assets/geek-logo.png" alt="Logo Geek" id="logoGeek">
+        </div>
+    </header>
+    <main>
+        <div class="section-product">
+            <h2>MIS PRODUCTOS</h2>
+            <div class="products" data-products>
+            </div>
+        </div>
+        <div class="section-form">
+            <h2>Agregar Producto</h2>
+            <form class="container-form" data-form>
+                <label>
+                    <input placeholder="nombre..." type="text" data-name name="Nombre" required>
+                </label>
+                <label>
+                    <input placeholder="precio..." type="text" data-price name="Precio" required>
+                </label>
+                <label>
+                    <input placeholder="imagen...  " type="text" data-image name="Imagen" required>
+                </label>
+                <div class="container-btn">
+                    <button class="btn-submit" type="submit">Enviar</button>
+                    <button class="btn-clear" type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <ul class="section-social">
+                <li class="icon github">
+                    <a href="https://github.com/rgaguedo" target="_blank">
+                        <img src="./assets/social/github.png" alt="Logo Github" id="img-github">
+                    </a>
+                    <span class="tooltip">GitHub</span>
+                </li>
+                <li class="icon linkedin">
+                    <a href="https://www.linkedin.com/in/rgaguedo/" target="_blank">
+                        <img src="./assets/social/linkedin.png" alt="Logo LinkedIn" id="img-linkedin">
+                    </a>
+                    <span class="tooltip">Linkedin</span>
+                </li>
+            </ul>
+        </div>
+        <div class="section-footer">
+            <p>Aonnix</p>
+            <p>Desarrollado por Raulitho Aguedo</p>
+            <p>- 2024 -</p>
+        </div>
+    </footer>
+    <div class="success-msg">
+        <i class="fa fa-check"></i>
+        This is a success message.
+    </div>
+    <div class="error-msg">
+        <i class="fa fa-times-circle"></i>
+        Error en la operación.
+    </div>
+    <script src="./js/controllers/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Página Principal */
+*{
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    background: #F2E9E4;
+}
+
+/* Sección Encabezado */
+header{
+    background: #22223B;
+    padding: 10px;
+}
+
+#logoGeek{
+    width: 10%;
+    filter: sepia(100%) brightness(70%) invert(100%);
+}
+
+h1{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+
+/* Sección Productos */
+.section-product{
+    width: 758px;
+    padding: 20px;
+}
+
+h2{
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.products{
+    width: 678px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: gray 5px 5px 5px 0;
+}
+
+.product-item{
+    width: 170px;
+    height: 230px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 12px;
+    background: #22223B;
+}
+
+.item-img-product{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.btn-delete{
+    background: none;
+    border: none;   
+}
+
+
+.btn-delete:hover{
+    animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.img-delete{
+    width: 20px;
+    filter: brightness(300%) grayscale(100%);
+    cursor: pointer;
+}
+
+/* Sección Formulario */
+.section-form{
+    width: 472px;
+    height: 517px;
+    padding: 20px;
+}
+
+.container-form{
+    width: auto;
+}
+
+input{
+    width: 392px;
+    height: 45px;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: solid 1px #22223B;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn-submit, .btn-clear{
+    width: 188px;
+    height: 55px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background: #22223B;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: top .01s linear;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0 0 1px #585897 inset,
+        0 0 0 1px rgba(255,255,255,0.15) inset,
+        0 6px 0 0 #3a3a64,
+        0 6px 0 1px rgba(0,0,0,.4),
+        0 6px 8px 1px rgba(0,0,0,0.5);
+}
+
+.btn-submit:active, .btn-clear:active{
+    box-shadow: 0 0 0 1px #585897 inset,
+          0 0 0 2px rgba(255,255,255,0.15) inset,
+          0 0 0 1px rgba(0,0,0,0.4);
+}
+
+/* Sección Footer */
+footer{
+    padding: 20px;
+    background: #22223B;
+    font-family: "Lato", sans-serif;
+}
+
+#img-github, #img-linkedin{
+    width: 45px;
+}
+
+.section-social .icon{
+    position: relative;
+    background: rgba(255, 255, 255, 0.329);
+    border-radius: 50%;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.section-social .tooltip{
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #1877F2;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.section-social .tooltip::before{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #1877F2;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.section-social .icon:hover .tooltip{
+    top: -29px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.section-social .icon:hover span, .section-social .icon:hover .tooltip{
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.section-social .github:hover, .section-social .github:hover .tooltip, .section-social .github:hover .tooltip::before,
+.section-social .linkedin:hover, .section-social .linkedin:hover .tooltip, .section-social .linkedin:hover .tooltip::before{
+    color: white;
+}
+
+.section-footer{
+    font-size: large;
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
+    padding-top: 20px;
+}
+
+/* Responsive */
+/* Mobile */
+@media screen and (max-width:767px){
+    /* Sección Encabezado */
+    #logoGeek{
+        width: 50%;
+        filter: sepia(100%) brightness(70%) invert(100%);
+    }
+
+    /* Sección Formulario */
+    .section-form{
+        width: 100%;
+        padding: 0;
+    }
+
+    input{
+        width: 100%;
+        padding: 0;
+    }
+
+    .btn-submit, .btn-clear{
+        width: 180px;
+    }
+
+    /* Sección Productos */
+    .section-product{
+
+        width: 100%;
+        padding: 0;
+    }
+
+    .products{
+        height: 470px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .product-item{
+        width: 42%;
+        height: 210px;
+    }
+
+}

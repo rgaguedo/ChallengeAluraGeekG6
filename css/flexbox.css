@@ -1,0 +1,115 @@
+/* Sección Encabezado */
+.section-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sección de Productos */
+main{
+    display: flex;
+    justify-content: center;
+}
+.section-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.products{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: auto;
+}
+
+.container-item-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-item-info-price{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Sección Formulario */
+.section-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-btn{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+/* Sección Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+.section-social{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-social .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+/* Mobile */
+@media screen and (max-width:767px){
+    main{
+        display: flex;
+        flex-flow: column-reverse;
+   }
+
+   /* Sección Formulario */
+   .container-btn{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    /* Sección Productos */
+    .section-product{
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .products{
+        gap: 20px;
+        padding: 10px;
+    }
+
+}

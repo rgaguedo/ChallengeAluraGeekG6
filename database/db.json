@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop HP Pavilion",
+      "price": 3500,
+      "image": "https://oechsle.vteximg.com.br/arquivos/ids/9051721-1000-1000/imageUrl_2.jpg?v=637902224933070000"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone Samsung Galaxy S21",
+      "price": 2800,
+      "image": "https://falabella.scene7.com/is/image/FalabellaPE/gsc_125335665_4277365_1?wid=800&hei=800&qlt=70"
+    },
+    {
+      "id": 3,
+      "name": "Televisor LG 55\" 4K",
+      "price": 4500,
+      "image": "https://www.efe.com.pe/media/catalog/product/5/5/55ur7300psa_01.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+    },
+    {
+      "id": 4,
+      "name": "Auriculares Sony WH-1000XM4",
+      "price": 1200,
+      "image": "https://pesonyb2c.vtexassets.com/arquivos/ids/209668-800-800?v=637324319722470000&width=800&height=800&aspect=true"
+    },
+    {
+      "id": 5,
+      "name": "Tablet Apple iPad Pro",
+      "price": 4000,
+      "image": "https://tiendasishop.com/media/catalog/product/i/p/ipad_pro_wi-fi_12-9_in_6th_generation_space_gray_pdp_image_position-1b_coes.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+    },
+    {
+      "id": 6,
+      "name": "Reloj Inteligente Garmin Fenix 6",
+      "price": 3000,
+      "image": "https://garmin.com.pe/wp-content/uploads/2020/07/010-02410-143.png"
+    },
+    {
+      "id": 7,
+      "name": "Cámara Canon EOS R6",
+      "price": 7500,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmdkYny0WtoUzPb0Mse2VPKGxcs6CqISHCbA&s"
+    },
+    {
+      "id": 8,
+      "name": "Consola PlayStation 5",
+      "price": 3500,
+      "image": "https://www.gamescaxas.com/wp-content/uploads/2021/09/CONSOLA-PLAYSTATION-5-CON-LECTOR-DE-DISCOS-PS5-_1.png"
+    },
+    {
+      "id": 9,
+      "name": "Parlante Bluetooth JBL Charge 4",
+      "price": 600,
+      "image": "https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/2398/PMP00002689530/full_image-1.jpg"
+    }
+  ]
+}
